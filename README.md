@@ -13,6 +13,7 @@ This is a simple CRUD project that add some project and tasks to the project. It
 party applications.
 * [eslint](https://eslint.org/): a pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript. Maintain your code quality with ease.
 * [prettier](https://prettier.io/): an opinionated code formatter
+* [sequelize](https://sequelize.org/): is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server.
 
 ## Installation
 
