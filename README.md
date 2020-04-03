@@ -17,16 +17,81 @@ party applications.
 
 ## Installation
 
-To install the necessary packages:
+*To install the necessary packages go to the root directory and run the following command:*
 
 ```
 yarn install
 ```
 
-To run the app:
+*To run the app:*
 
 ```
 yarn dev
 ```
+
+## Docker
+
+*To see which container is running:*
+
+```
+docker ps
+```
+
+*To see a list of all containers:*
+
+```
+docker ps -a
+```
+
+*To stop docker:*
+
+```
+docker stop database
+```
+
+*To run docker again:*
+
+```
+docker start database
+```
+
+*To visualize errors:*
+
+```
+docker log database
+```
+
+## Sequelize
+
+We can use sequelize-cli to create our migrations.
+
+*To create a table called ```users``` we can use the following command:*
+
+```
+yarn sequelize migration:create --name=create-users
+```
+
+After this a file will be automatically created inside the migrations folder.
+
+*To run the migration:*
+
+```
+yarn sequelize db:migrate
+```
+
+This will created a table inside the database
+
+*To undo the last migration:*
+
+```
+yarn sequelize db:migrate:undo
+```
+
+*To undo all migrations:*
+
+```
+yarn sequelize db:migrate:undo:all
+```
+
 
 That's it! :)
